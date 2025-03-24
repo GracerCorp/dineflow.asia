@@ -63,11 +63,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				storehub: {
-					orange: '#FF8C00',
-					'light-orange': '#FFA500',
-					blue: '#1E88E5',
-					'light-gray': '#F5F5F5',
+				gserve: {
+					brown: '#8B4513',
+					'light-brown': '#A0522D',
+					purple: '#9b87f5',
+					'light-purple': '#D6BCFA',
 					'dark-gray': '#333333',
 				}
 			},

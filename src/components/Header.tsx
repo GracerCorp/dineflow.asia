@@ -31,14 +31,14 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <div className="text-storehub-orange font-bold text-2xl">STORE<span className="text-storehub-dark-gray">HUB</span></div>
+            <div className="text-gserve-purple font-bold text-2xl">G<span className="text-gserve-dark-gray">serve</span></div>
           </a>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <div className="relative group">
-            <button className="flex items-center text-gray-700 hover:text-storehub-orange transition-colors">
+            <button className="flex items-center text-gray-700 hover:text-gserve-purple transition-colors">
               <span>ผลิตภัณฑ์</span>
               <ChevronDown className="ml-1 h-4 w-4" />
             </button>
@@ -50,9 +50,9 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <a href="#" className="text-gray-700 hover:text-storehub-orange transition-colors">ราคา</a>
-          <a href="#" className="text-gray-700 hover:text-storehub-orange transition-colors">ลูกค้าของเรา</a>
-          <a href="#" className="text-gray-700 hover:text-storehub-orange transition-colors">บล็อก</a>
+          <a href="#" className="text-gray-700 hover:text-gserve-purple transition-colors">ราคา</a>
+          <a href="#" className="text-gray-700 hover:text-gserve-purple transition-colors">ลูกค้าของเรา</a>
+          <a href="#" className="text-gray-700 hover:text-gserve-purple transition-colors">บล็อก</a>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -66,7 +66,7 @@ const Header = () => {
             </select>
             <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500 pointer-events-none" />
           </div>
-          <Button className="bg-storehub-blue hover:bg-blue-700 text-white transition-colors">
+          <Button className="bg-gserve-brown hover:bg-gserve-light-brown text-white transition-colors">
             ติดต่อเจ้าหน้าที่
           </Button>
         </div>
@@ -105,7 +105,7 @@ const Header = () => {
                   <option value="th">TH</option>
                 </select>
               </div>
-              <Button className="w-full bg-storehub-blue hover:bg-blue-700 text-white">
+              <Button className="w-full bg-gserve-brown hover:bg-gserve-light-brown text-white">
                 ติดต่อเจ้าหน้าที่
               </Button>
             </div>

@@ -50,7 +50,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       ref={cardRef}
       className={cn(
         "rounded-xl p-6 transition-all duration-300 img-reveal hover:shadow-lg",
-        orangeBackground ? "bg-storehub-orange text-white" : "bg-white",
+        orangeBackground ? "bg-gserve-brown text-white" : "bg-white",
         className
       )}
     >
@@ -69,7 +69,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       
       <h3 className={cn(
         "text-xl font-semibold mb-2",
-        orangeBackground ? "text-white" : "text-storehub-dark-gray"
+        orangeBackground ? "text-white" : "text-gserve-dark-gray"
       )}>
         {title}
       </h3>

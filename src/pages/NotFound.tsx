@@ -21,12 +21,12 @@ const NotFound = () => {
       
       <main className="flex-grow flex items-center justify-center py-20 px-4">
         <div className="text-center max-w-md mx-auto">
-          <div className="text-storehub-orange text-9xl font-bold mb-4 animate-pulse-soft">404</div>
-          <h1 className="text-3xl md:text-4xl font-bold text-storehub-dark-gray mb-6">ไม่พบหน้าที่คุณค้นหา</h1>
+          <div className="text-gserve-purple text-9xl font-bold mb-4 animate-pulse-soft">404</div>
+          <h1 className="text-3xl md:text-4xl font-bold text-gserve-dark-gray mb-6">ไม่พบหน้าที่คุณค้นหา</h1>
           <p className="text-gray-600 mb-8">ขออภัย เราไม่พบหน้าที่คุณต้องการ โปรดตรวจสอบ URL หรือกลับไปยังหน้าหลัก</p>
           <Button 
             asChild
-            className="px-6 py-3 bg-storehub-orange hover:bg-orange-600 text-white font-medium rounded-lg transition-all duration-300 btn-hover-effect"
+            className="px-6 py-3 bg-gserve-brown hover:bg-gserve-light-brown text-white font-medium rounded-lg transition-all duration-300 btn-hover-effect"
           >
             <a href="/">กลับไปหน้าหลัก</a>
           </Button>
