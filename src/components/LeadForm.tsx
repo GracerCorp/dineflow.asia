@@ -1,18 +1,16 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
+import { cn } from '@/lib/utils';
 
 const LeadForm: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
-    lastname: '',
     email: '',
     phone: '',
     business: '',
     businessType: '',
-    location: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -34,90 +32,78 @@ const LeadForm: React.FC = () => {
       // Reset form
       setFormData({
         name: '',
-        lastname: '',
         email: '',
         phone: '',
         business: '',
         businessType: '',
-        location: ''
       });
     }, 1500);
   };
 
   return (
-    <div className="bg-storehub-orange p-6 md:p-8 rounded-xl shadow-lg max-w-md w-full">
-      <h3 className="text-white text-lg font-semibold mb-4">กรอกฟอร์มลงทะเบียน</h3>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <Input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          placeholder="ชื่อ"
-          className="bg-white border-none h-12"
-          required
-        />
-        <Input
-          type="text"
-          name="lastname"
-          value={formData.lastname}
-          onChange={handleChange}
-          placeholder="นามสกุล"
-          className="bg-white border-none h-12"
-          required
-        />
-        <Input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder="อีเมล"
-          className="bg-white border-none h-12"
-          required
-        />
-        <Input
-          type="tel"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          placeholder="เบอร์โทรศัพท์"
-          className="bg-white border-none h-12"
-          required
-        />
-        <Input
-          type="text"
-          name="business"
-          value={formData.business}
-          onChange={handleChange}
-          placeholder="ชื่อร้านค้า"
-          className="bg-white border-none h-12"
-          required
-        />
-        <Input
-          type="text"
-          name="businessType"
-          value={formData.businessType}
-          onChange={handleChange}
-          placeholder="ประเภทร้านค้า"
-          className="bg-white border-none h-12"
-          required
-        />
-        <Input
-          type="text"
-          name="location"
-          value={formData.location}
-          onChange={handleChange}
-          placeholder="สถานที่ตั้งร้านค้า"
-          className="bg-white border-none h-12"
-          required
-        />
+    <div className={cn(
+      "bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-xl",
+      "border border-gray-100 max-w-sm w-full",
+      "transform transition-all duration-300 hover:shadow-2xl"
+    )}>
+      <h3 className="text-gserve-dark-gray text-lg font-semibold mb-4 border-b pb-2">รับข้อเสนอราคาพิเศษ</h3>
+      <form onSubmit={handleSubmit} className="space-y-3">
+        <div className="grid grid-cols-1 gap-3">
+          <Input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="ชื่อ-นามสกุล"
+            className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+            required
+          />
+          <Input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="อีเมล"
+            className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+            required
+          />
+          <Input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            placeholder="เบอร์โทรศัพท์"
+            className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+            required
+          />
+          <div className="grid grid-cols-2 gap-3">
+            <Input
+              type="text"
+              name="business"
+              value={formData.business}
+              onChange={handleChange}
+              placeholder="ชื่อร้านค้า"
+              className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+              required
+            />
+            <Input
+              type="text"
+              name="businessType"
+              value={formData.businessType}
+              onChange={handleChange}
+              placeholder="ประเภทร้านค้า"
+              className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+              required
+            />
+          </div>
+        </div>
         
         <Button 
           type="submit" 
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 h-12 rounded-md font-medium transition-all duration-300 btn-hover-effect"
+          className="w-full bg-gradient-to-r from-gserve-brown to-amber-500 hover:from-amber-600 hover:to-amber-700 text-white py-2 h-10 rounded-md font-medium transition-all duration-300"
           disabled={isSubmitting}
         >
-          {isSubmitting ? 'กำลังส่งข้อมูล...' : 'ขอรับใบเสนอราคา'}
+          {isSubmitting ? 'กำลังส่งข้อมูล...' : 'รับใบเสนอราคาฟรี'}
         </Button>
       </form>
     </div>
