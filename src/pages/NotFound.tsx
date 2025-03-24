@@ -1,5 +1,9 @@
+
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,14 +16,24 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
-      </div>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      
+      <main className="flex-grow flex items-center justify-center py-20 px-4">
+        <div className="text-center max-w-md mx-auto">
+          <div className="text-storehub-orange text-9xl font-bold mb-4 animate-pulse-soft">404</div>
+          <h1 className="text-3xl md:text-4xl font-bold text-storehub-dark-gray mb-6">ไม่พบหน้าที่คุณค้นหา</h1>
+          <p className="text-gray-600 mb-8">ขออภัย เราไม่พบหน้าที่คุณต้องการ โปรดตรวจสอบ URL หรือกลับไปยังหน้าหลัก</p>
+          <Button 
+            asChild
+            className="px-6 py-3 bg-storehub-orange hover:bg-orange-600 text-white font-medium rounded-lg transition-all duration-300 btn-hover-effect"
+          >
+            <a href="/">กลับไปหน้าหลัก</a>
+          </Button>
+        </div>
+      </main>
+      
+      <Footer />
     </div>
   );
 };
