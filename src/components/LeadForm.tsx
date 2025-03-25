@@ -46,7 +46,7 @@ const LeadForm: React.FC = () => {
       "border border-gray-100 max-w-sm w-full",
       "transform transition-all duration-300 hover:shadow-2xl"
     )}>
-      <h3 className="text-gserve-dark-gray text-lg font-semibold mb-4 border-b pb-2">รับข้อเสนอราคาพิเศษ</h3>
+      <h3 className="text-dineflow-dark-gray text-lg font-semibold mb-4 border-b pb-2">รับข้อเสนอราคาพิเศษ</h3>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div className="grid grid-cols-1 gap-3">
           <Input
@@ -55,7 +55,7 @@ const LeadForm: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="ชื่อ-นามสกุล"
-            className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+            className="border-gray-200 h-10 text-sm focus:border-dineflow-brown focus:ring-dineflow-brown/20"
             required
           />
           <Input
@@ -64,7 +64,7 @@ const LeadForm: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="อีเมล"
-            className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+            className="border-gray-200 h-10 text-sm focus:border-dineflow-brown focus:ring-dineflow-brown/20"
             required
           />
           <Input
@@ -73,7 +73,7 @@ const LeadForm: React.FC = () => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="เบอร์โทรศัพท์"
-            className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+            className="border-gray-200 h-10 text-sm focus:border-dineflow-brown focus:ring-dineflow-brown/20"
             required
           />
           <div className="grid grid-cols-2 gap-3">
@@ -83,7 +83,7 @@ const LeadForm: React.FC = () => {
               value={formData.business}
               onChange={handleChange}
               placeholder="ชื่อร้านค้า"
-              className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+              className="border-gray-200 h-10 text-sm focus:border-dineflow-brown focus:ring-dineflow-brown/20"
               required
             />
             <Input
@@ -92,7 +92,7 @@ const LeadForm: React.FC = () => {
               value={formData.businessType}
               onChange={handleChange}
               placeholder="ประเภทร้านค้า"
-              className="border-gray-200 h-10 text-sm focus:border-gserve-brown focus:ring-gserve-brown/20"
+              className="border-gray-200 h-10 text-sm focus:border-dineflow-brown focus:ring-dineflow-brown/20"
               required
             />
           </div>
@@ -100,7 +100,7 @@ const LeadForm: React.FC = () => {
         
         <Button 
           type="submit" 
-          className="w-full bg-gradient-to-r from-gserve-brown to-amber-500 hover:from-amber-600 hover:to-amber-700 text-white py-2 h-10 rounded-md font-medium transition-all duration-300"
+          className="w-full bg-gradient-to-r from-dineflow-brown to-amber-500 hover:from-amber-600 hover:to-amber-700 text-white py-2 h-10 rounded-md font-medium transition-all duration-300"
           disabled={isSubmitting}
         >
           {isSubmitting ? 'กำลังส่งข้อมูล...' : 'รับใบเสนอราคาฟรี'}
