@@ -1,7 +1,7 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,15 +30,15 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="flex items-center">
-            <div className="text-gserve-purple font-bold text-2xl">G<span className="text-gserve-dark-gray">serve</span></div>
-          </a>
+          <Link to="/" className="flex items-center">
+            <div className="text-dineflow-brown font-bold text-2xl">Dine<span className="text-dineflow-dark-gray">Flow</span></div>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <div className="relative group">
-            <button className="flex items-center text-gray-700 hover:text-gserve-purple transition-colors">
+            <button className="flex items-center text-gray-700 hover:text-dineflow-brown transition-colors">
               <span>ผลิตภัณฑ์</span>
               <ChevronDown className="ml-1 h-4 w-4" />
             </button>
@@ -50,9 +50,9 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <a href="#" className="text-gray-700 hover:text-gserve-purple transition-colors">ราคา</a>
-          <a href="#" className="text-gray-700 hover:text-gserve-purple transition-colors">ลูกค้าของเรา</a>
-          <a href="#" className="text-gray-700 hover:text-gserve-purple transition-colors">บล็อก</a>
+          <Link to="/pricing" className="text-gray-700 hover:text-dineflow-brown transition-colors">ราคา</Link>
+          <a href="#" className="text-gray-700 hover:text-dineflow-brown transition-colors">ลูกค้าของเรา</a>
+          <a href="#" className="text-gray-700 hover:text-dineflow-brown transition-colors">บล็อก</a>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -66,7 +66,7 @@ const Header = () => {
             </select>
             <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500 pointer-events-none" />
           </div>
-          <Button className="bg-gserve-brown hover:bg-gserve-light-brown text-white transition-colors">
+          <Button className="bg-dineflow-brown hover:bg-dineflow-light-brown text-white transition-colors">
             ติดต่อเจ้าหน้าที่
           </Button>
         </div>
@@ -90,7 +90,7 @@ const Header = () => {
                 <ChevronDown className="h-4 w-4" />
               </button>
             </div>
-            <a href="#" className="block py-2 text-gray-700">ราคา</a>
+            <Link to="/pricing" className="block py-2 text-gray-700">ราคา</Link>
             <a href="#" className="block py-2 text-gray-700">ลูกค้าของเรา</a>
             <a href="#" className="block py-2 text-gray-700">บล็อก</a>
             
@@ -105,7 +105,7 @@ const Header = () => {
                   <option value="th">TH</option>
                 </select>
               </div>
-              <Button className="w-full bg-gserve-brown hover:bg-gserve-light-brown text-white">
+              <Button className="w-full bg-dineflow-brown hover:bg-dineflow-light-brown text-white">
                 ติดต่อเจ้าหน้าที่
               </Button>
             </div>
