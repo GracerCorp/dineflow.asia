@@ -1,69 +1,26 @@
-# Welcome to your Lovable project
+# DineFlow Website 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/038e1774-ad0c-4753-a3c3-2b45deb077fc/deploy-status)](https://app.netlify.com/sites/dineflow/deploys)
+[![Docker](https://github.com/GracerCorp/storehub-replicator/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/GracerCorp/storehub-replicator/actions/workflows/docker-publish.yml)
+---
 
-## Project info
+# DineFlow
 
-**URL**: https://lovable.dev/projects/bf94e685-b1ac-43b9-8f06-507c5bad2ded
+Welcome to the **DineFlow website** repository! This project is part of the tools supporting the operations of the **dineflow.asia** website, a platform that connects restaurants, cafes, and diners across Asia for a seamless dining experience.
 
-## How can I edit this code?
+## What Does This Repository Do?
 
-There are several ways of editing your application.
+The DineFlow website is designed to help manage and synchronize data between our systems and partner platforms. It ensures that menus, restaurant details, and other important information are always up to date for users on the **DineFlow Asia** website.
 
-**Use Lovable**
+## Why Is It Important?
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bf94e685-b1ac-43b9-8f06-507c5bad2ded) and start prompting.
+- **Real-Time Data Updates**: Keeps the information you see on the website accurate and fresh.
+- **Reliability**: Ensures smooth operations of services like menu updates, table reservations, and restaurant promotions.
+- **Scalability**: Supports the growing network of restaurants and diners across Asia.
 
-Changes made via Lovable will be committed automatically to this repo.
+## About **DineFlow Asia**
 
-**Use your preferred IDE**
+**DineFlow Asia** is your trusted dining companion. Whether you're looking for a cozy cafe, a luxurious fine-dining restaurant, or just a quick bite, we make it easy to discover and book your next meal. With a wide variety of options and features like real-time table reservations, we aim to provide a convenient and delightful dining experience.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bf94e685-b1ac-43b9-8f06-507c5bad2ded) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Let me know if you need any edits or additional sections!
