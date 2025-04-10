@@ -259,111 +259,98 @@ const Index = () => {
       {/* Product Demo Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <span className="inline-block bg-gradient-to-r from-blue-600 to-blue-400 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">ชมการทำงาน</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-dineflow-dark-gray mb-4">หน้าตา DineFlow POS เป็นอย่างไร?</h2>
-              <p className="text-gray-600 mb-8 max-w-3xl mx-auto">ระบบ POS ที่ออกแบบเพื่อความง่ายในการใช้งาน ครบครันด้วยฟีเจอร์ที่ตอบโจทย์ธุรกิจทุกประเภท</p>
+          <div className="text-center mb-12">
+            <span className="inline-block bg-gradient-to-r from-dineflow-brown to-amber-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">ชมการทำงาน</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-dineflow-dark-gray mb-4">หน้าตา DineFlow POS เป็นอย่างไร?</h2>
+            <p className="text-gray-600 mb-8 max-w-3xl mx-auto">ระบบ POS ที่ออกแบบเพื่อความง่ายในการใช้งาน ครบครันด้วยฟีเจอร์ที่ตอบโจทย์ธุรกิจทุกประเภท</p>
+          </div>
+
+          {/* Main Slideshow */}
+          <div className="max-w-5xl mx-auto relative group">
+            <div className="overflow-hidden rounded-xl shadow-2xl">
+              {/* Slide 1 */}
+              <div className="relative">
+                <img
+                  src="/images/pos/messageImage_1744299778817_0.jpg"
+                  alt="DineFlow POS Interface - หน้าจอหลัก"
+                  className="w-full h-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-xl font-semibold mb-2">หน้าจอหลักของ DineFlow POS</h3>
+                  <p className="text-sm text-white/80">ดูภาพรวมร้านได้ในหน้าเดียว พร้อมฟังก์ชันที่ใช้งานบ่อยในการเข้าถึงที่รวดเร็ว</p>
+                </div>
+              </div>
+
+              {/* Navigation Arrows */}
+              <button className="absolute top-1/2 left-4 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white/30 hover:bg-white/50 flex items-center justify-center backdrop-blur-sm transition-all duration-300 opacity-0 group-hover:opacity-100">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+              </button>
+              <button className="absolute top-1/2 right-4 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white/30 hover:bg-white/50 flex items-center justify-center backdrop-blur-sm transition-all duration-300 opacity-0 group-hover:opacity-100">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </button>
             </div>
 
-            {/* Main UI Screenshot */}
-            <div className="relative rounded-xl overflow-hidden shadow-2xl img-reveal revealed group mb-12">
-              <img
-                src="https://images.unsplash.com/photo-1609604440809-851c6bf958a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-                alt="DineFlow POS UI Demo"
-                className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="w-20 h-20 bg-gradient-to-r from-dineflow-brown to-amber-500 rounded-full flex items-center justify-center text-white transform transition-transform hover:scale-110 shadow-xl">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            {/* Feature Screenshots Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="space-y-4">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1556742031-c6961e8560b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                    alt="DineFlow POS Order Screen"
-                    className="w-full h-auto"
-                  />
-                  <div className="p-4">
-                    <h4 className="font-semibold text-lg mb-2">หน้าจอรับออเดอร์</h4>
-                    <p className="text-gray-600 text-sm">ออกแบบมาให้ใช้งานง่าย รวดเร็ว ลดความผิดพลาดในการรับออเดอร์</p>
-                  </div>
-                </div>
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                    alt="DineFlow POS Kitchen Display"
-                    className="w-full h-auto"
-                  />
-                  <div className="p-4">
-                    <h4 className="font-semibold text-lg mb-2">จอแสดงผลในครัว</h4>
-                    <p className="text-gray-600 text-sm">แสดงรายการอาหารที่ต้องทำแบบเรียลไทม์ พร้อมระบบแจ้งเตือน</p>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1556742208-999815fca738?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                    alt="DineFlow POS Analytics"
-                    className="w-full h-auto"
-                  />
-                  <div className="p-4">
-                    <h4 className="font-semibold text-lg mb-2">รายงานและวิเคราะห์</h4>
-                    <p className="text-gray-600 text-sm">ดูรายงานยอดขาย สินค้าขายดี และพฤติกรรมลูกค้าได้แบบละเอียด</p>
-                  </div>
-                </div>
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1556742205-e7530469f157?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                    alt="DineFlow POS Inventory"
-                    className="w-full h-auto"
-                  />
-                  <div className="p-4">
-                    <h4 className="font-semibold text-lg mb-2">จัดการสต็อก</h4>
-                    <p className="text-gray-600 text-sm">ควบคุมและติดตามสต็อกสินค้าได้แบบเรียลไทม์ ป้องกันของหมด</p>
-                  </div>
-                </div>
-              </div>
+            {/* Thumbnail Navigation */}
+            <div className="flex justify-center gap-4 mt-6">
+              <button className="relative w-24 h-16 rounded-lg overflow-hidden border-2 border-dineflow-brown">
+                <img
+                  src="/images/pos/messageImage_1744299778817_0.jpg"
+                  alt="Thumbnail 1"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-dineflow-brown/20"></div>
+              </button>
+              <button className="relative w-24 h-16 rounded-lg overflow-hidden border-2 border-transparent hover:border-dineflow-brown/50 transition-all">
+                <img
+                  src="/images/pos/messageImage_1744299750351_0.jpg"
+                  alt="Thumbnail 2"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-all"></div>
+              </button>
+              <button className="relative w-24 h-16 rounded-lg overflow-hidden border-2 border-transparent hover:border-dineflow-brown/50 transition-all">
+                <img
+                  src="/images/pos/messageImage_1744299722149_0.jpg"
+                  alt="Thumbnail 3"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-all"></div>
+              </button>
             </div>
 
             {/* Feature Highlights */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-                <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-dineflow-brown/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-dineflow-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-2">รองรับหน้าจอทุกขนาด</h3>
-                <p className="text-gray-600 text-sm">ทำงานได้ทั้งบนมือถือ แท็บเล็ต และคอมพิวเตอร์ ไม่ว่าจะอยู่ที่ไหนก็ใช้งานได้</p>
+                <h4 className="text-lg font-semibold mb-1">ใช้งานง่าย</h4>
+                <p className="text-gray-600 text-sm">อินเทอร์เฟซที่เรียบง่าย เข้าใจได้ทันที</p>
               </div>
-
-              <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-                <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-2">ระบบความปลอดภัยสูง</h3>
-                <p className="text-gray-600 text-sm">ปกป้องข้อมูลของคุณด้วยระบบความปลอดภัยระดับสูง รองรับการกำหนดสิทธิ์ผู้ใช้หลายระดับ</p>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-                <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-dineflow-brown/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-dineflow-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-2">ทำงานได้แม้เน็ตล่ม</h3>
-                <p className="text-gray-600 text-sm">แม้อินเทอร์เน็ตล่ม ก็ยังสามารถขายสินค้าและซิงค์ข้อมูลเมื่อกลับมาออนไลน์</p>
+                <h4 className="text-lg font-semibold mb-1">ทำงานได้ทุกที่</h4>
+                <p className="text-gray-600 text-sm">ใช้งานได้ทั้งบนมือถือและแท็บเล็ต</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-dineflow-brown/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-dineflow-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                  </svg>
+                </div>
+                <h4 className="text-lg font-semibold mb-1">อัพเดทต่อเนื่อง</h4>
+                <p className="text-gray-600 text-sm">รับฟีเจอร์ใหม่ๆ อัตโนมัติ</p>
               </div>
             </div>
           </div>
@@ -846,6 +833,114 @@ const Index = () => {
           </Button>
         </div>
       </div>
+
+      {/* UI Demo Section */}
+      <section className="bg-gradient-to-b from-gray-50 to-white py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              ระบบ DineFlow POS ใช้งานง่าย เหมาะกับร้านอาหารทุกประเภท
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              ออกแบบมาเพื่อตอบโจทย์ร้านอาหารโดยเฉพาะ ใช้งานง่าย รวดเร็ว และมีฟีเจอร์ครบครัน
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <span className="text-dineflow-brown">01.</span> หน้าจอรับออเดอร์อัจฉริยะ
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  รับออเดอร์ได้รวดเร็ว แก้ไขรายการอาหารง่าย พร้อมระบบแนะนำเมนูและโปรโมชั่น
+                </p>
+                <img 
+                  src="https://images.unsplash.com/photo-1606976428769-1519a70f8c2c?w=600&h=400&fit=crop" 
+                  alt="DineFlow POS Order Screen" 
+                  className="rounded-lg shadow-md w-full"
+                />
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <span className="text-dineflow-brown">02.</span> ระบบชำระเงินที่ยืดหยุ่น
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  รองรับการชำระเงินหลากหลายรูปแบบ ทั้งเงินสด บัตรเครดิต และ QR Payment
+                </p>
+                <img 
+                  src="https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=600&h=400&fit=crop" 
+                  alt="DineFlow POS Payment System" 
+                  className="rounded-lg shadow-md w-full"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-6 md:mt-12">
+              <div className="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <span className="text-dineflow-brown">03.</span> จัดการโต๊ะและพื้นที่ร้าน
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  ระบบจัดการโต๊ะแบบ Real-time พร้อมแสดงสถานะโต๊ะและเวลารับประทานอาหาร
+                </p>
+                <img 
+                  src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=600&h=400&fit=crop" 
+                  alt="DineFlow Table Management" 
+                  className="rounded-lg shadow-md w-full"
+                />
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <span className="text-dineflow-brown">04.</span> รายงานและวิเคราะห์ข้อมูล
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  ดูรายงานยอดขาย สินค้าขายดี และพฤติกรรมลูกค้าแบบ Real-time
+                </p>
+                <img 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" 
+                  alt="DineFlow Analytics Dashboard" 
+                  className="rounded-lg shadow-md w-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-dineflow-brown/5 rounded-2xl p-8 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-dineflow-brown/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-dineflow-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">ความปลอดภัยสูง</h4>
+                <p className="text-gray-600">ระบบเข้ารหัสข้อมูลทั้งหมด พร้อมระบบสำรองข้อมูลอัตโนมัติ</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-dineflow-brown/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-dineflow-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">ทำงานได้แม้ไม่มีเน็ต</h4>
+                <p className="text-gray-600">ระบบ Offline Mode ช่วยให้ธุรกิจดำเนินต่อได้แม้อินเทอร์เน็ตมีปัญหา</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-dineflow-brown/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-dineflow-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">อัพเดทฟรีตลอดชีพ</h4>
+                <p className="text-gray-600">รับฟีเจอร์ใหม่ๆ และการอัพเดทความปลอดภัยโดยอัตโนมัติ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
