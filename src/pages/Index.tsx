@@ -107,24 +107,20 @@ const Index = () => {
 
   // Mock partner logos
   const partnerLogos = [
-    "https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1560472355-536de3962603?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=150&h=70&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?w=150&h=70&fit=crop&q=80",
+    '/partner/Ellipse 4006.png',
+    '/partner/Ellipse 4007.png',
+    '/partner/Ellipse 4008.png',
+    '/partner/Ellipse 4009.png',
+    '/partner/Ellipse 4010.png',
+    '/partner/Ellipse 4011.png',
+    '/partner/Ellipse 4012.png',
+    '/partner/Ellipse 4013.png',
   ];
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-28 pb-16 md:py-20 lg:pt-32 lg:pb-24 overflow-hidden bg-gradient-to-br from-white to-gray-100">
         <div className="container mx-auto px-4 md:px-6">
@@ -136,11 +132,11 @@ const Index = () => {
                   <span className="block animate-fade-up" style={{ animationDelay: '0.4s' }}>ระบบ POS จัดการร้าน</span>
                   <span className="block animate-fade-up" style={{ animationDelay: '0.6s' }}>ง่าย ครบ จบในระบบเดียว</span>
                 </h1>
-                
+
                 <p className="text-lg text-gray-600 animate-fade-up" style={{ animationDelay: '0.8s' }}>
                   ยกระดับธุรกิจของคุณด้วยระบบ POS ที่ใช้งานง่าย รวดเร็ว และเชื่อถือได้
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
                   <Button className="px-6 py-6 bg-dineflow-brown hover:bg-dineflow-light-brown text-white font-semibold text-lg rounded-lg shadow-lg transition-all duration-300 animate-fade-up" style={{ animationDelay: '1s' }}>
                     ทดลองใช้ฟรี 14 วัน <ArrowRight className="ml-2 h-5 w-5" />
@@ -151,24 +147,24 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="order-2 lg:relative">
-              <div 
-                ref={heroImageRef} 
+              <div
+                ref={heroImageRef}
                 className="mt-8 img-reveal shine-effect relative z-10 rounded-xl overflow-hidden shadow-2xl"
               >
-                <img 
-                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-                  alt="DineFlow POS System Interface" 
-                  className="w-full h-auto transition-scale" 
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                  alt="DineFlow POS System Interface"
+                  className="w-full h-auto transition-scale"
                 />
               </div>
-              
+
               {/* Floating Form */}
               <div className="lg:absolute lg:-bottom-12 lg:-right-8 mt-8 lg:mt-0 z-20 transform transition-transform hover:-translate-y-2 duration-300">
                 <LeadForm />
               </div>
-              
+
               {/* Decorative elements */}
               <div className="hidden lg:block absolute -top-10 -left-10 w-40 h-40 bg-dineflow-brown/10 rounded-full blur-2xl"></div>
               <div className="hidden lg:block absolute -bottom-10 -right-10 w-60 h-60 bg-dineflow-purple/10 rounded-full blur-3xl"></div>
@@ -176,7 +172,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
@@ -185,8 +181,8 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-dineflow-dark-gray mb-4">เมื่อใช้งาน DineFlow POS</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">ระบบ POS ที่ออกแบบมาเพื่อธุรกิจของคุณ ช่วยให้การทำงานง่ายขึ้น</p>
           </div>
-          
-          <div 
+
+          <div
             ref={featuresRef}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 img-reveal max-w-6xl mx-auto"
           >
@@ -200,7 +196,7 @@ const Index = () => {
                 </svg>
               }
             />
-            
+
             <FeatureCard
               title="จัดการสต๊อกเรียลไทม์"
               description="ตรวจสอบและจัดการสต๊อกสินค้าแบบเรียลไทม์ ป้องกันของหมด"
@@ -210,7 +206,7 @@ const Index = () => {
                 </svg>
               }
             />
-            
+
             <FeatureCard
               title="รองรับการขยายสาขา"
               description="รองรับการขยายธุรกิจไปยังหลายสาขา พร้อมระบบจัดการแบบรวมศูนย์"
@@ -220,7 +216,7 @@ const Index = () => {
                 </svg>
               }
             />
-            
+
             <FeatureCard
               title="รายงานยอดขายละเอียด"
               description="วิเคราะห์ยอดขาย สินค้าขายดี และพฤติกรรมลูกค้าด้วยรายงานแบบละเอียด"
@@ -230,7 +226,7 @@ const Index = () => {
                 </svg>
               }
             />
-            
+
             <FeatureCard
               title="รองรับมือถือและแท็บเล็ต"
               description="ใช้งานได้ทั้งบนมือถือ แท็บเล็ต และคอมพิวเตอร์ ทำงานได้ทุกที่"
@@ -240,7 +236,7 @@ const Index = () => {
                 </svg>
               }
             />
-            
+
             <FeatureCard
               title="การชำระเงินหลากหลาย"
               description="รองรับการชำระเงินหลายรูปแบบ ทั้งเงินสด บัตรเครดิต และ QR Payment"
@@ -251,7 +247,7 @@ const Index = () => {
               }
             />
           </div>
-          
+
           <div className="mt-12 text-center">
             <Button className="px-8 py-6 bg-gradient-to-r from-dineflow-brown to-amber-500 hover:from-amber-600 hover:to-amber-700 text-white font-semibold text-lg rounded-lg shadow-lg transition-all duration-300">
               ดูฟีเจอร์ทั้งหมด
@@ -259,7 +255,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Product Demo Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4 md:px-6">
@@ -272,9 +268,9 @@ const Index = () => {
 
             {/* Main UI Screenshot */}
             <div className="relative rounded-xl overflow-hidden shadow-2xl img-reveal revealed group mb-12">
-              <img 
-                src="https://images.unsplash.com/photo-1609604440809-851c6bf958a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-                alt="DineFlow POS UI Demo" 
+              <img
+                src="https://images.unsplash.com/photo-1609604440809-851c6bf958a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                alt="DineFlow POS UI Demo"
                 className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -290,9 +286,9 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="space-y-4">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1556742031-c6961e8560b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                    alt="DineFlow POS Order Screen" 
+                  <img
+                    src="https://images.unsplash.com/photo-1556742031-c6961e8560b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="DineFlow POS Order Screen"
                     className="w-full h-auto"
                   />
                   <div className="p-4">
@@ -301,9 +297,9 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                    alt="DineFlow POS Kitchen Display" 
+                  <img
+                    src="https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="DineFlow POS Kitchen Display"
                     className="w-full h-auto"
                   />
                   <div className="p-4">
@@ -314,9 +310,9 @@ const Index = () => {
               </div>
               <div className="space-y-4">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1556742208-999815fca738?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                    alt="DineFlow POS Analytics" 
+                  <img
+                    src="https://images.unsplash.com/photo-1556742208-999815fca738?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="DineFlow POS Analytics"
                     className="w-full h-auto"
                   />
                   <div className="p-4">
@@ -325,9 +321,9 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1556742205-e7530469f157?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                    alt="DineFlow POS Inventory" 
+                  <img
+                    src="https://images.unsplash.com/photo-1556742205-e7530469f157?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="DineFlow POS Inventory"
                     className="w-full h-auto"
                   />
                   <div className="p-4">
@@ -349,7 +345,7 @@ const Index = () => {
                 <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-2">รองรับหน้าจอทุกขนาด</h3>
                 <p className="text-gray-600 text-sm">ทำงานได้ทั้งบนมือถือ แท็บเล็ต และคอมพิวเตอร์ ไม่ว่าจะอยู่ที่ไหนก็ใช้งานได้</p>
               </div>
-              
+
               <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                 <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -359,7 +355,7 @@ const Index = () => {
                 <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-2">ระบบความปลอดภัยสูง</h3>
                 <p className="text-gray-600 text-sm">ปกป้องข้อมูลของคุณด้วยระบบความปลอดภัยระดับสูง รองรับการกำหนดสิทธิ์ผู้ใช้หลายระดับ</p>
               </div>
-              
+
               <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                 <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -373,7 +369,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Testimonials Section */}
       <section className="py-20 bg-gradient-to-br from-white to-gray-50">
         <div className="container mx-auto px-4 md:px-6">
@@ -382,7 +378,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-dineflow-dark-gray mb-4">ลูกค้าพูดถึงเราอย่างไร</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">ประสบการณ์จริงจากผู้ประกอบการที่ใช้ DineFlow POS</p>
           </div>
-          
+
           <div className="relative max-w-5xl mx-auto">
             {/* Testimonial Carousel */}
             <div className="overflow-hidden">
@@ -401,7 +397,7 @@ const Index = () => {
                 ))}
               </div>
             </div>
-            
+
             {/* Navigation Arrows */}
             <button className="absolute top-1/2 -left-4 transform -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center z-10 hover:bg-gray-50 transition-colors">
               <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -413,7 +409,7 @@ const Index = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
               </svg>
             </button>
-            
+
             {/* Dots Indicator */}
             <div className="flex justify-center mt-8 space-x-2">
               <button className="w-3 h-3 rounded-full bg-dineflow-brown"></button>
@@ -421,21 +417,21 @@ const Index = () => {
               <button className="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"></button>
             </div>
           </div>
-          
+
           {/* Client Logos */}
           <div className="mt-16 pt-8 border-t border-gray-200">
             <p className="text-center text-gray-600 text-sm mb-8">ธุรกิจชั้นนำที่ไว้วางใจเรา</p>
             <div className="flex flex-wrap justify-center items-center gap-8">
               {[1, 2, 3, 4, 5].map((i) => (
                 <div key={i} className="grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-                  <img 
+                  <img
                     src={`https://images.unsplash.com/photo-${[
                       "1560179707-f14e90ef3623",
                       "1541746972996-4e0b0f43e02a",
                       "1542744173-8e7e53415bb0",
                       "1516387938699-a93567ec168e",
                       "1606857521015-7f9fcf423740"
-                    ][i-1]}?w=120&h=60&fit=crop&q=80`} 
+                    ][i - 1]}?w=120&h=60&fit=crop&q=80`}
                     alt={`Client Logo ${i}`}
                     className="h-12 w-auto"
                   />
@@ -445,7 +441,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Business Types Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
@@ -455,7 +451,7 @@ const Index = () => {
             <h3 className="text-2xl font-semibold text-dineflow-orange mb-4">รองรับธุรกิจทุกประเภท</h3>
             <p className="text-gray-600 max-w-2xl mx-auto">ไม่ว่าคุณจะทำธุรกิจประเภทใด DineFlow POS ก็พร้อมเป็นผู้ช่วยที่ดีที่สุดของคุณ</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Restaurant Card */}
             <div className="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -535,7 +531,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="text-center mt-12">
             <Button className="group px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white font-medium rounded-lg shadow-md transition-all duration-300 hover:scale-105">
               <span className="flex items-center">
@@ -546,7 +542,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Partners Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
@@ -554,20 +550,20 @@ const Index = () => {
             <h2 className="text-xl md:text-2xl font-semibold text-dineflow-dark-gray mb-4">แบรนด์ชั้นนำที่ไว้วางใจเลือกใช้บริการ DineFlow POS</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">ร่วมเป็นส่วนหนึ่งกับแบรนด์ชั้นนำที่ไว้วางใจเรา</p>
           </div>
-          
-          <div 
+
+          <div
             ref={logosRef}
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 items-center justify-items-center img-reveal max-w-5xl mx-auto"
           >
             {partnerLogos.map((logo, index) => (
-              <div 
-                key={index} 
-                className="w-full max-w-[200px] aspect-[3/2] relative group"
+              <div
+                key={index}
+                className="w-full max-w-[300px] aspect-[3/2] relative group"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-white rounded-lg shadow-sm"></div>
+                <div className="absolute inset-0 bg-gradient-to-br rounded-lg shadow-sm"></div>
                 <div className="absolute inset-0 flex items-center justify-center p-6 transform transition-transform duration-300 group-hover:scale-110">
-                  <img 
-                    src={logo} 
+                  <img
+                    src={logo}
                     alt={`Partner Logo ${index + 1}`}
                     className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-80 hover:opacity-100"
                   />
@@ -577,7 +573,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* FAQ Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
@@ -585,11 +581,11 @@ const Index = () => {
             <span className="inline-block bg-gradient-to-r from-dineflow-brown to-amber-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">คำถามที่พบบ่อย</span>
             <h2 className="text-3xl md:text-4xl font-bold text-dineflow-dark-gray mb-4">คำถามที่พบบ่อย</h2>
           </div>
-          
+
           <div className="space-y-4">
             {/* FAQ Item 1 */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-              <button 
+              <button
                 className="flex justify-between items-center w-full p-6 text-left"
                 onClick={() => {
                   const el = document.getElementById('faq-1');
@@ -600,20 +596,20 @@ const Index = () => {
               >
                 <h3 className="text-lg font-semibold text-dineflow-dark-gray flex items-center">
                   <span className="text-dineflow-brown mr-3">Q:</span>
-                  <span>ทำไมต้องใช้ DineFlow POS?</span>
+                  <span>DineFlow เหมาะกับธุรกิจประเภทใดบ้าง?</span>
                 </h3>
                 <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div id="faq-1" className="px-6 pb-6 hidden">
-                <p className="text-gray-600">DineFlow POS ช่วยให้คุณจัดการร้านค้าได้อย่างมีประสิทธิภาพ ลดเวลาในการทำงาน เพิ่มยอดขาย ด้วยระบบที่ใช้งานง่ายและมีฟีเจอร์ครบครัน</p>
+                <p className="text-gray-600">ระบบของเรารองรับหลากหลายธุรกิจ เช่น ร้านอาหาร คาเฟ่ บาร์ ร้านเหล้า มินิมาร์ท ร้านค้าแฟชั่น รวมถึงธุรกิจบริการอื่น ๆ ที่ต้องการระบบ POS ที่ยืดหยุ่นและใช้งานง่าย</p>
               </div>
             </div>
-            
+
             {/* FAQ Item 2 */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-              <button 
+              <button
                 className="flex justify-between items-center w-full p-6 text-left"
                 onClick={() => {
                   const el = document.getElementById('faq-2');
@@ -624,20 +620,20 @@ const Index = () => {
               >
                 <h3 className="text-lg font-semibold text-dineflow-dark-gray flex items-center">
                   <span className="text-dineflow-brown mr-3">Q:</span>
-                  <span>ต้องมีความรู้ด้านเทคนิคหรือไม่?</span>
+                  <span>รองรับการเชื่อมต่ออุปกรณ์ POS หรือไม่?</span>
                 </h3>
                 <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div id="faq-2" className="px-6 pb-6 hidden">
-                <p className="text-gray-600">ไม่จำเป็น! DineFlow ออกแบบมาให้ใช้งานง่าย มีทีมงานช่วยติดตั้งและสอนการใช้งาน พร้อมคู่มือและวิดีโอสอนที่เข้าใจง่าย</p>
+                <p className="text-gray-600">รองรับ 100%! DineFlow สามารถเชื่อมต่อกับอุปกรณ์ POS มาตรฐานได้ครบถ้วน เช่น เครื่องพิมพ์ใบเสร็จ เครื่องสแกนบาร์โค้ด ลิ้นชักเก็บเงิน และหน้าจอลูกค้า</p>
               </div>
             </div>
-            
+
             {/* FAQ Item 3 */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-              <button 
+              <button
                 className="flex justify-between items-center w-full p-6 text-left"
                 onClick={() => {
                   const el = document.getElementById('faq-3');
@@ -648,20 +644,20 @@ const Index = () => {
               >
                 <h3 className="text-lg font-semibold text-dineflow-dark-gray flex items-center">
                   <span className="text-dineflow-brown mr-3">Q:</span>
-                  <span>ข้อมูลของฉันปลอดภัยหรือไม่?</span>
+                  <span>ระบบมีการจัดการสต็อกสินค้าหรือไม่?</span>
                 </h3>
                 <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div id="faq-3" className="px-6 pb-6 hidden">
-                <p className="text-gray-600">DineFlow ใช้ระบบคลาวด์ที่มีความปลอดภัยสูง ข้อมูลทั้งหมดถูกเข้ารหัสและสำรองข้อมูลอัตโนมัติ ป้องกันการสูญหายหรือเข้าถึงโดยไม่ได้รับอนุญาต</p>
+                <p className="text-gray-600">มีครบถ้วน! ระบบสต็อกแบบเรียลไทม์ สามารถติดตามสินค้าเข้า-ออก ตรวจสอบปริมาณคงเหลือ และแจ้งเตือนเมื่อใกล้หมด ช่วยให้คุณบริหารจัดการคลังสินค้าได้อย่างแม่นยำ</p>
               </div>
             </div>
-            
+
             {/* FAQ Item 4 */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-              <button 
+              <button
                 className="flex justify-between items-center w-full p-6 text-left"
                 onClick={() => {
                   const el = document.getElementById('faq-4');
@@ -672,18 +668,118 @@ const Index = () => {
               >
                 <h3 className="text-lg font-semibold text-dineflow-dark-gray flex items-center">
                   <span className="text-dineflow-brown mr-3">Q:</span>
-                  <span>มีค่าใช้จ่ายซ่อนเร้นหรือไม่?</span>
+                  <span>มีรายงานยอดขายหรือแดชบอร์ดวิเคราะห์ไหม?</span>
                 </h3>
                 <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div id="faq-4" className="px-6 pb-6 hidden">
-                <p className="text-gray-600">ไม่มี! DineFlow มีรูปแบบการจ่ายเงินที่ชัดเจน โปร่งใส ไม่มีค่าใช้จ่ายแอบแฝง ฟีเจอร์ใหม่ๆ จะถูกอัปเดตให้โดยอัตโนมัติโดยไม่มีค่าใช้จ่ายเพิ่มเติม</p>
+                <p className="text-gray-600">มีทั้งรายงานมาตรฐานและแดชบอร์ดสำหรับผู้บริหาร สามารถดูยอดขายตามวัน เวลา สินค้า หรือพนักงาน ช่วยให้วางแผนการตลาดและบริหารร้านได้ง่ายขึ้น</p>
+              </div>
+            </div>
+
+            {/* FAQ Item 5 */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+              <button
+                className="flex justify-between items-center w-full p-6 text-left"
+                onClick={() => {
+                  const el = document.getElementById('faq-5');
+                  if (el) {
+                    el.classList.toggle('hidden');
+                  }
+                }}
+              >
+                <h3 className="text-lg font-semibold text-dineflow-dark-gray flex items-center">
+                  <span className="text-dineflow-brown mr-3">Q:</span>
+                  <span>ใช้งานยากไหม? ต้องอบรมก่อนหรือเปล่า?</span>
+                </h3>
+                <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="faq-5" className="px-6 pb-6 hidden">
+                <p className="text-gray-600">ไม่ยากเลย! DineFlow ถูกออกแบบให้ใช้งานง่าย อินเทอร์เฟซเป็นมิตรต่อผู้ใช้ และเรามีคู่มือการใช้งาน พร้อมบริการอบรมฟรีให้กับทุกแพ็กเกจ</p>
+              </div>
+            </div>
+
+            {/* FAQ Item 6 */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+              <button
+                className="flex justify-between items-center w-full p-6 text-left"
+                onClick={() => {
+                  const el = document.getElementById('faq-6');
+                  if (el) {
+                    el.classList.toggle('hidden');
+                  }
+                }}
+              >
+                <h3 className="text-lg font-semibold text-dineflow-dark-gray flex items-center">
+                  <span className="text-dineflow-brown mr-3">Q:</span>
+                  <span>หากเจอปัญหา มีทีมซัพพอร์ตหรือไม่?</span>
+                </h3>
+                <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="faq-6" className="px-6 pb-6 hidden">
+                <p className="text-gray-600">แน่นอน! เรามีทีมซัพพอร์ตที่ดูแลคุณอย่างใกล้ชิด ผ่าน Line, โทรศัพท์ หรือรีโมตออนไลน์ ให้ความช่วยเหลือรวดเร็วในเวลาทำการ</p>
               </div>
             </div>
           </div>
-          
+
+          {/* Why Choose DineFlow Section */}
+          <div className="mt-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-dineflow-dark-gray mb-8 text-center">ทำไมต้องเลือก DineFlow?</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Feature 1 */}
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-3 flex items-center">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 mr-2" />
+                  ปรับได้ตามสไตล์ร้านคุณ
+                </h3>
+                <p className="text-gray-600">DineFlow ไม่ใช่ระบบสำเร็จรูปแบบตายตัว แต่สามารถปรับแต่งได้ทุกขั้นตอนให้เหมาะกับวิธีการทำงานจริงของร้านคุณ</p>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-3 flex items-center">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 mr-2" />
+                  ระบบเสถียร ใช้งานลื่นไหล
+                </h3>
+                <p className="text-gray-600">สร้างบนเทคโนโลยีสมัยใหม่ ใช้งานได้ต่อเนื่องแม้ในช่วงพีคของร้าน ไม่มีล่ม ไม่มีค้าง</p>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-3 flex items-center">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 mr-2" />
+                  ราคาสมเหตุสมผล
+                </h3>
+                <p className="text-gray-600">แพ็กเกจหลากหลาย เลือกได้ตามขนาดร้าน ไม่มีค่าธรรมเนียมแอบแฝง และไม่มีสัญญาผูกมัดระยะยาว</p>
+              </div>
+
+              {/* Feature 4 */}
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-3 flex items-center">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 mr-2" />
+                  ฟีเจอร์ครบถ้วน
+                </h3>
+                <p className="text-gray-600">รองรับทุกความต้องการ เช่น ระบบจัดการโต๊ะ ระบบสั่งจอง ระบบจ่ายล่วงหน้า สต็อกสินค้า รายงานเรียลไทม์</p>
+              </div>
+
+              {/* Feature 5 */}
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <h3 className="text-lg font-semibold text-dineflow-dark-gray mb-3 flex items-center">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 mr-2" />
+                  ทีมงานดูแลใกล้ชิด
+                </h3>
+                <p className="text-gray-600 text-center text-sm">ไม่ใช่แค่ระบบ แต่เราคือทีมงานที่เข้าใจร้านอาหาร พร้อมให้คำแนะนำ แก้ไข และพัฒนาให้เหมาะกับธุรกิจคุณ</p>
+              </div>
+            </div>
+          </div>
+
           <div className="text-center mt-12">
             <Button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-medium rounded-lg shadow-md transition-all duration-300">
               ติดต่อเจ้าหน้าที่
@@ -691,7 +787,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-dineflow-brown to-amber-500 relative overflow-hidden">
         {/* Add animated background elements */}
@@ -699,14 +795,14 @@ const Index = () => {
           <div className="absolute -top-24 -left-24 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
-        
+
         <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-up">พร้อมเริ่มต้นใช้งาน DineFlow POS หรือยัง?</h2>
             <p className="text-white text-lg mb-8 opacity-90">ติดต่อเราเพื่อรับคำปรึกษาฟรี และทดลองใช้งานฟรี 14 วัน</p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 className="group px-8 py-6 bg-white hover:bg-yellow-50 text-dineflow-brown font-semibold text-lg rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl relative overflow-hidden"
               >
                 <span className="relative z-10 flex items-center">
@@ -715,8 +811,8 @@ const Index = () => {
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 to-yellow-50 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="group px-8 py-6 bg-transparent border-2 border-white hover:bg-white/20 text-white font-semibold text-lg rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <span className="flex items-center">
@@ -725,14 +821,14 @@ const Index = () => {
                 </span>
               </Button>
             </div>
-            
+
             <div className="text-center mt-8 text-white/80">
               <p>Powered by Gracer Company Limited</p>
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* Enhanced Sticky CTA Button - visible on scroll */}
       <div className="fixed bottom-6 right-6 z-50 transition-all duration-300 transform translate-y-32 sticky-cta">
         <div className="flex flex-col items-end space-y-2">
@@ -750,7 +846,7 @@ const Index = () => {
           </Button>
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );
