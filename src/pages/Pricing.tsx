@@ -13,46 +13,96 @@ const Pricing = () => {
       name: 'Starter',
       price: isYearly ? '999' : '999',
       yearlyPrice: '11,988',
-      description: 'เหมาะสำหรับร้านค้าที่เพิ่งเริ่มต้น',
+      description: 'เหมาะสำหรับร้านเล็กที่ต้องการเริ่มต้นใช้ระบบ POS',
       features: [
         'ระบบ Cashier',
         'จำกัดจำนวนเมนูอาหาร 100 รายการ',
         'จำกัดจำนวนบิลต่อเดือน 1,500 รายการ',
+        'ไม่จำกัดจำนวนโต๊ะ',
       ],
       cta: 'ทดลองใช้ฟรี',
       popular: false,
     },
     {
-      name: 'Standard',
+      name: 'Basic',
       price: isYearly ? '2,499' : '2,499',
       yearlyPrice: '29,988',
-      description: 'เหมาะสำหรับร้านค้าขนาดกลาง',
+      description: 'เหมาะสำหรับร้านที่มีระบบครัวและต้องการจัดการโต๊ะด้วย',
       features: [
         'ระบบ Cashier',
         'ระบบครัว',
         'ระบบจัดการโต๊ะ',
-        'ระบบพนักงานจัดการออเดอร์',
         'ระบบรายงานพื้นฐาน',
         'จำกัดจำนวนเมนูอาหาร 100 รายการ',
         'จำกัดจำนวนบิลต่อเดือน 2,500 รายการ',
+        'จำกัดจำนวนโต๊ะ 20 โต๊ะ',
+      ],
+      cta: 'เริ่มต้นใช้งาน',
+      popular: false,
+    },
+    {
+      name: 'Standard',
+      price: isYearly ? '2,999' : '2,999',
+      yearlyPrice: '35,988',
+      description: 'เหมาะกับร้านที่ต้องการเริ่มมีพนักงานหลายตำแหน่ง',
+      features: [
+        'ฟีเจอร์ทั้งหมดจากแพ็กเกจ Basic',
+        'ระบบลูกค้าสั่งอาหารด้วยตนเอง',
+        'ระบบพนักงานจัดการออเดอร์',
+        'จำกัดจำนวนเมนูอาหาร 200 รายการ',
+        'จำกัดจำนวนบิลต่อเดือน 3,500 รายการ',
+        'จำกัดจำนวนโต๊ะ 50 โต๊ะ',
       ],
       cta: 'เริ่มต้นใช้งาน',
       popular: true,
     },
     {
+      name: 'Pro',
+      price: isYearly ? '3,499' : '3,499',
+      yearlyPrice: '41,988',
+      description: 'สำหรับร้านขนาดกลางที่ต้องการระบบครบในระดับหนึ่ง',
+      features: [
+        'ฟีเจอร์ทั้งหมดจากแพ็กเกจ Standard',
+        'ระบบสำหรับผู้จัดการร้าน',
+        'ระบบสต็อกร้านค้า',
+        'ระบบ Support ร้านค้า 18/7',
+        'จำกัดจำนวนเมนูอาหาร 500 รายการ',
+        'จำกัดจำนวนบิลต่อเดือน 4,500 รายการ',
+        'จำกัดจำนวนโต๊ะ 100 โต๊ะ',
+      ],
+      cta: 'เริ่มต้นใช้งาน',
+      popular: false,
+    },
+    {
       name: 'Premium',
       price: isYearly ? '4,999' : '4,999',
       yearlyPrice: '59,988',
-      description: 'เหมาะสำหรับร้านค้าที่ต้องการระบบเต็มรูปแบบ',
+      description: 'เหมาะกับร้านขนาดใหญ่ที่ต้องการระบบการบริหารจัดการอย่างครบถ้วน',
       features: [
-        'ฟีเจอร์ทั้งหมดจากแพ็กเกจ Standard',
-        'ระบบสต็อกร้านค้า',
+        'ระบบทั้งหมดแบบครบถ้วน',
         'ระบบรายงาน Custom พิเศษ',
         'ระบบ Support ร้านค้า 18/7',
+        'จำกัดจำนวนเมนูอาหาร 1,000 รายการ',
+        'จำกัดจำนวนบิลต่อเดือน 10,000 รายการ',
+        'จำกัดจำนวนโต๊ะ 200 โต๊ะ',
+      ],
+      cta: 'เริ่มต้นใช้งาน',
+      popular: false,
+    },
+    {
+      name: 'Enterprise',
+      price: 'ติดต่อ',
+      yearlyPrice: 'ติดต่อ',
+      description: 'เหมาะกับธุรกิจขนาดใหญ่หรือแฟรนไชส์',
+      features: [
+        'ระบบทุกอย่างแบบไม่จำกัด',
+        'ปรับแต่งระบบตามความต้องการ',
+        'ดูแลระบบแบบ Priority',
         'ไม่จำกัดจำนวนเมนูอาหาร',
         'ไม่จำกัดจำนวนบิลต่อเดือน',
+        'ไม่จำกัดจำนวนโต๊ะ',
       ],
-      cta: 'ติดต่อเรา',
+      cta: 'ติดต่อทีมขาย',
       popular: false,
     }
   ];
@@ -175,13 +225,19 @@ const Pricing = () => {
                 <tr className="border-b-2 border-gray-200">
                   <th className="py-4 px-6 text-left text-gray-600">ฟีเจอร์</th>
                   <th className="py-4 px-6 text-center">Starter</th>
+                  <th className="py-4 px-6 text-center">Basic</th>
                   <th className="py-4 px-6 text-center">Standard</th>
+                  <th className="py-4 px-6 text-center">Pro</th>
                   <th className="py-4 px-6 text-center">Premium</th>
+                  <th className="py-4 px-6 text-center">Enterprise</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">ระบบ Cashier</td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
@@ -191,16 +247,34 @@ const Pricing = () => {
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">ระบบจัดการโต๊ะ</td>
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 text-gray-600">ระบบลูกค้าสั่งอาหารด้วยตนเอง</td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">ระบบพนักงานจัดการออเดอร์</td>
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                 </tr>
@@ -209,35 +283,71 @@ const Pricing = () => {
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 text-gray-600">ระบบสำหรับผู้จัดการร้าน</td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">ระบบสต็อกร้านค้า</td>
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">ระบบรายงาน Custom พิเศษ</td>
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">ระบบ Support ร้านค้า 18/7</td>
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><XCircle className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                   <td className="py-4 px-6 text-center"><CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" /></td>
                 </tr>
                 <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 text-gray-600">จำกัดจำนวนเมนูอาหาร</td>
+                  <td className="py-4 px-6 text-gray-600">จำนวนเมนูอาหาร</td>
                   <td className="py-4 px-6 text-center">100 รายการ</td>
                   <td className="py-4 px-6 text-center">100 รายการ</td>
+                  <td className="py-4 px-6 text-center">200 รายการ</td>
+                  <td className="py-4 px-6 text-center">500 รายการ</td>
+                  <td className="py-4 px-6 text-center">1,000 รายการ</td>
                   <td className="py-4 px-6 text-center">ไม่จำกัด</td>
                 </tr>
                 <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 text-gray-600">จำกัดจำนวนบิลต่อเดือน</td>
+                  <td className="py-4 px-6 text-gray-600">จำนวนบิลต่อเดือน</td>
                   <td className="py-4 px-6 text-center">1,500 รายการ</td>
                   <td className="py-4 px-6 text-center">2,500 รายการ</td>
+                  <td className="py-4 px-6 text-center">3,500 รายการ</td>
+                  <td className="py-4 px-6 text-center">4,500 รายการ</td>
+                  <td className="py-4 px-6 text-center">10,000 รายการ</td>
+                  <td className="py-4 px-6 text-center">ไม่จำกัด</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 text-gray-600">จำนวนโต๊ะ</td>
+                  <td className="py-4 px-6 text-center">ไม่จำกัด</td>
+                  <td className="py-4 px-6 text-center">20 โต๊ะ</td>
+                  <td className="py-4 px-6 text-center">50 โต๊ะ</td>
+                  <td className="py-4 px-6 text-center">100 โต๊ะ</td>
+                  <td className="py-4 px-6 text-center">200 โต๊ะ</td>
                   <td className="py-4 px-6 text-center">ไม่จำกัด</td>
                 </tr>
               </tbody>
